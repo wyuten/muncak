@@ -43,13 +43,19 @@ body {
     display: flex;
     margin-left: auto;
     list-style: none;
+    box-sizing: border-box;
 
     .main-header__nav-item {
-      margin-left: 4vw;
-
       a {
         text-decoration: none;
-        color: white;
+        color: #ffffff;
+        padding: 5px 2vw;
+      }
+      
+      a:hover {
+        color: #14215e;
+        background-color: #ffffff;
+        border-radius: 13px;
       }
     }
 
@@ -77,7 +83,7 @@ body {
 
   .title-section__start-btn {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     background-color: rgb(40, 112, 219);
     box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
     padding: 20px 50px;
