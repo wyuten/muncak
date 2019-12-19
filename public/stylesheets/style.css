@@ -52,7 +52,7 @@ body {
 }
 
 .main-header .main-header__nav .main-header__nav-item {
-  margin-left: 60px;
+  margin-left: 4vw;
 }
 
 .main-header .main-header__nav .main-header__nav-item a {
@@ -88,11 +88,5 @@ body {
           box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
   padding: 20px 50px;
   border-radius: 50px;
-}
-
-@media screen and (max-width: 1330px) {
-  .main-header .main-header__nav .main-header__nav-item {
-    margin-left: 2.5vw;
-  }
 }
 /*# sourceMappingURL=style.css.map */
