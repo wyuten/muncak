@@ -22,6 +22,7 @@ body {
   margin: 0 auto;
 }
 
+/* Header */
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,23 +74,24 @@ body {
   margin-left: 0;
 }
 
-.title-section {
+/* Home section */
+.home-section {
   color: #1c2056;
 }
 
-.title-section .title-section__promo-title {
+.home-section .home-section__promo-title {
   width: 35vw;
   font-size: 4vw;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
-.title-section .title-section__promo-description {
+.home-section .home-section__promo-description {
   width: 35vw;
   margin-bottom: 70px;
 }
 
-.title-section .title-section__start-btn {
+.home-section .home-section__start-btn {
   text-decoration: none;
   color: #ffffff;
   background-color: #2870db;
@@ -101,7 +103,7 @@ body {
   transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 
-.title-section .title-section__start-btn:hover {
+.home-section .home-section__start-btn:hover {
   -webkit-box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
           box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
 }
