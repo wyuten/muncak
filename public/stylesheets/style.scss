@@ -75,34 +75,33 @@ body {
 
 /* Home section */
 
-.home-section {
+.home {
   $title-width: 35vw;
   color: #1c2056;
 
-  .home-section__promo-title {
+  .home__promo-title {
     width: $title-width;
     font-size: 4vw;
     font-weight: bold;
     margin-bottom: 30px;
   }
 
-  .home-section__promo-description {
+  .home__promo-description {
     width: $title-width;
     margin-bottom: 70px;
   }
 
-  .home-section__start-btn {
+  .home__start-btn {
     text-decoration: none;
     color: #ffffff;
     background-color: rgb(40, 112, 219);
-    // box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
     padding: 20px 50px;
     border-radius: 50px;
 
     transition: box-shadow 0.2s;
   }
 
-  .home-section__start-btn:hover {
+  .home__start-btn:hover {
     box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
   }
 }
