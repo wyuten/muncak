@@ -9,7 +9,7 @@ body {
   background-color: #fbfcfc;
   background-image: url("../images/bg1-left.png"), url("../images/bg1-right.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 17%, 52%;
+  background-size: 18vw, 52vw;
   background-position: -180px 80px, 100% 0;
 }
 
@@ -41,6 +41,8 @@ body {
 
 .main-header .logo .logo__highlighted-letter {
   color: #2870db;
+  -webkit-transition: color 1s;
+  transition: color 1s;
 }
 
 .main-header .main-header__nav {
@@ -63,6 +65,8 @@ body {
   color: #14215e;
   background-color: #ffffff;
   border-radius: 13px;
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .main-header .main-header__nav .main-header__nav-item:first-child {
@@ -89,9 +93,16 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #2870db;
-  -webkit-box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
-          box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
   padding: 20px 50px;
   border-radius: 50px;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.title-section .title-section__start-btn:hover {
+  -webkit-box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
+          box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
 }
 /*# sourceMappingURL=style.css.map */
