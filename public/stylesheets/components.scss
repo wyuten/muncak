@@ -1,0 +1,21 @@
+$corporate-color: #12B8FF;
+
+@mixin screenTitle {
+    text-align: center;
+    font-size: 36px;
+    color: #263238;
+
+    width: 690px;
+    margin: 0 auto;
+    margin-bottom: 15.5vw;
+}
+
+@mixin button {
+    color: #ffffff;
+    background-color: rgb(40, 112, 219);
+    padding: 20px 50px;
+    border-radius: 50px;
+
+    cursor: pointer;
+    text-decoration: none;
+}

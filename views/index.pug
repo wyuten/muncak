@@ -1,11 +1,54 @@
-extends layout
-
-block content
-  main
-    section(class="home small-wrapper")
-      h1(class="home__promo-title")= title
-      p(class="home__promo-description")
-        | Here is the hiking information you need to decide 
-        | if it is right for you, and to make it more interesting, 
-        | enjoyable, and safe.
-      a(class="home__start-btn" href="#") Get Started
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+  body
+    header(class="main-header big-wrapper")
+      strong(class="logo") 
+        span(class="logo__highlighted-letter") M
+        | uncak
+      ul(class="main-nav")
+        li(class="main-nav__item")
+          a(href="#") Home
+        li(class="main-nav__item")
+          a(href="#") Go Hiking
+        li(class="main-nav__item")
+          a(href="#") About
+        li(class="main-nav__item")
+          a(href="#") Login
+    main
+      section(class="welcome small-wrapper")
+        h2(class="welcome-title")= title
+        p(class="welcome-subtitle")
+          | Here is the hiking information you need to decide 
+          | if it is right for you, and to make it more interesting, 
+          | enjoyable, and safe.
+        a(class="start-btn btn" href="#") Get Started
+      section(class="go-hiking")
+        h2(class="go-hiking__title screen-title") 
+          | We envision a world  where everyone
+          | has permanent access to a hiking trail
+        section(class="hiking-roles small-wrapper")
+          article(class="hiking-role")
+            h3(class="hiking-role__title") Advocate
+            p(class="hiking-role__subtitle")
+              | We work with Congress, Federal agencies, and <br>
+              | partners on policy issues and legislation to ensure <br>
+              | funding for trails, preservation of natural areas, and <br>
+              | protection of the hiking experience.
+          article(class="hiking-role")
+            h3(class="hiking-role__title") Volunteer
+            p(class="hiking-role__subtitle")
+              | Trails don't maintain themselves. Individuals of any <br>
+              | age and experience level can become trail stewards. <br>
+              | Give back to the trails you love, meet new people, <br>
+              | and enjoy the experience!
+          article(class="hiking-role")
+            h3(class="hiking-role__title") Explore
+            p(class="hiking-role__subtitle")
+              | Feel confident when you set out on your next trail <br>
+              | adventure. Check out our free hiking resources like <br>
+              | tips for hiking with families, gear checklists, finding <br>
+              | the best trail for you.
