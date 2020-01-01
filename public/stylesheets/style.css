@@ -7,10 +7,10 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   background-color: #fbfcfc;
-  background-image: url("../images/bg1-left.png"), url("../images/bg1-right.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 15vw, 52vw;
-  background-position: -120px 200px, 100% 0;
+  background-image: url("../images/bg1-left.png"), url("../images/bg2-left.png"), url("../images/bg1-right.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 15vw, cover, 52vw;
+  background-position: -120px 200px, 0px 900px, 100% 0;
 }
 
 .big-wrapper {
@@ -97,12 +97,12 @@ body {
   background-color: #2870db;
   padding: 20px 50px;
   border-radius: 50px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   cursor: pointer;
   text-decoration: none;
-  -webkit-transition: -webkit-box-shadow 0.2s;
-  transition: -webkit-box-shadow 0.2s;
-  transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
 }
 
 .welcome .start-btn:hover {
@@ -114,6 +114,7 @@ body {
 .go-hiking__title {
   text-align: center;
   font-size: 36px;
+  font-weight: bold;
   color: #263238;
   width: 690px;
   margin: 0 auto;
@@ -128,9 +129,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .go-hiking .hiking-roles .hiking-role {
+  position: relative;
+  max-width: 450px;
   margin-right: auto;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -147,8 +153,57 @@ body {
   line-height: 2.5em;
 }
 
+.go-hiking .hiking-roles .hiking-role::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: calc(164px / 3);
+  height: calc(129px / 3);
+  background-image: url(../images/advocate-icon.png);
+}
+
+.go-hiking .hiking-roles .hiking-role:nth-child(2)::before {
+  background-image: url(../images/volunteer-icon.png);
+  width: calc(119px / 3);
+  height: calc(150px / 3);
+}
+
+.go-hiking .hiking-roles .hiking-role:nth-child(3)::before {
+  background-image: url(../images/explore-icon.png);
+  width: calc(187px / 3);
+  height: calc(108px / 3);
+}
+
 .go-hiking .hiking-roles .hiking-role:nth-child(2n) {
   margin-right: 0;
   margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+  .go-hiking .hiking-roles .hiking-role,
+  .go-hiking .hiking-roles .hiking-role:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.go-hiking .learn-btn {
+  color: #ffffff;
+  background-color: #2870db;
+  padding: 20px 50px;
+  border-radius: 50px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.go-hiking .learn-btn:hover {
+  -webkit-box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
+          box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
 }
 /*# sourceMappingURL=style.css.map */
