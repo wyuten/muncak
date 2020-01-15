@@ -20,18 +20,18 @@ html
         li(class="main-nav__item")
           a(href="#") Login
     main
-      section(class="welcome small-wrapper")
-        h2(class="welcome-title")= title
-        p(class="welcome-subtitle")
+      section(class="welcome")
+        h2(class="welcome__title")= title
+        p(class="welcome__subtitle")
           | Here is the hiking information you need to decide 
           | if it is right for you, and to make it more interesting, 
           | enjoyable, and safe.
         a(class="start-btn btn" href="#") Get Started
       section(class="go-hiking")
-        h2(class="go-hiking__title screen-title") 
+        h2(class="go-hiking__title") 
           | We envision a world  where everyone
           | has permanent access to a hiking trail
-        section(class="hiking-roles small-wrapper")
+        section(class="hiking-roles")
           article(class="hiking-role")
             h3(class="hiking-role__title") Advocate
             p(class="hiking-role__subtitle")
@@ -46,11 +46,137 @@ html
               | age and experience level can become trail stewards.
               | Give back to the trails you love, meet new people,
               | and enjoy the experience!
-          article(class="hiking-role")
-            h3(class="hiking-role__title") Explore
-            p(class="hiking-role__subtitle")
-              | Feel confident when you set out on your next trail
-              | adventure. Check out our free hiking resources like
-              | tips for hiking with families, gear checklists, finding
-              | the best trail for you.
-          a(class="learn-btn btn" href="#") Learn More
+          div(class="bottom-wrapper")
+            article(class="hiking-role")
+              h3(class="hiking-role__title") Explore
+              p(class="hiking-role__subtitle")
+                | Feel confident when you set out on your next trail
+                | adventure. Check out our free hiking resources like
+                | tips for hiking with families, gear checklists, finding
+                | the best trail for you.
+            a(class="learn-btn btn" href="#") Learn More
+      section(class="about")
+        h2(class="about__title")
+          | With the support of our members, and partners, we've
+          | improved trail access for millions of people
+        ul(class="achievements-list")
+          li(class="achievements-list__item")
+            p We’ve Mobilized
+            p 558,768
+            p Trail Volunteers
+          li(class="achievements-list__item")
+            p We’ve Facilitated
+            p 41,146
+            p Miles of Trail Maintenance & Construction
+          li(class="achievements-list__item")
+            p Volunteers Have Contributed
+            p $108 Million
+            p in Volunteer Labor
+      section(class="news")
+        h2(class="news__title") 
+          | Protecting Trails: Current News and Issues
+        ul(class="news-list")
+          li(class="news-list__item")
+            div(class="news-list__item-image")
+            div(class="news-list__item-description")
+              h3(class="news-list__item-title") 
+                | 2,802 Miles of Trail to be Improved on International Trails Day
+              p(class="news-list__item-subtitle") 
+                | On June 2, 2018, people across the worldwill come together to collectively improve 2,
+                | 802 miles of trail—the distance across the world—during International Trails Day. 
+                | Muncak invites hikers, cyclists,…
+              a(class="news-list__item-link" href="#") 
+                | Read More
+          li(class="news-list__item")
+            div(class="news-list__item-image")
+            div(class="news-list__item-description")
+              h3(class="news-list__item-title") 
+                | 2,802 Miles of Trail to be Improved on International Trails Day
+              p(class="news-list__item-subtitle") 
+                | On June 2, 2018, people across the worldwill come together to collectively improve 2,
+                | 802 miles of trail—the distance across the world—during International Trails Day. 
+                | Muncak invites hikers, cyclists,…
+              a(class="news-list__item-link" href="#") 
+                | Read More
+          li(class="news-list__item")
+            div(class="news-list__item-image")
+            div(class="news-list__item-description")
+              h3(class="news-list__item-title") 
+                | 2,802 Miles of Trail to be Improved on International Trails Day
+              p(class="news-list__item-subtitle") 
+                | On June 2, 2018, people across the worldwill come together to collectively improve 2,
+                | 802 miles of trail—the distance across the world—during International Trails Day. 
+                | Muncak invites hikers, cyclists,…
+              a(class="news-list__item-link" href="#") 
+                | Read More
+      section(class="login")
+        h2(class="login__title")
+          | Receive the latest updates on how to protect trails.
+          | Subscribe to the monthly edition of Paperless Trails.
+        form(class="login__form" action="#" method="POST")
+          input(class="login__form-field" type="text" placeholder="Name" name="name" autocomplete="off")
+          input(class="login__form-field" type="email" placeholder="Email Address" name="email" autocomplete="off")
+          button(class="login__form-btn") Subscribe
+    footer(class="main-footer")
+      div(class="footer-nav")
+        div(class="footer-nav__block company-info")
+          h3(class="footer-nav__title") Contact us
+          p(class="company-address")
+            | Muncak hiking society <br>
+            | 8605 Second Ave. <br>
+            | Silver Spring, MD 20910
+          p(class="company-contacts")
+            | Info@muncak.org <br>
+            | 1-301-565-6704 (Main) <br>
+            | 1-800-972-8608 (Toll-free)
+        div(class="footer-nav__block")
+          h3(class="footer-nav__title") About us
+          ul(class="footer-nav__links")
+            li
+              a(href="#") Our mission
+            li
+              a(href="#") Our team
+            li
+              a(href="#") Corporate sponsors
+            li
+              a(href="#") Financials
+            li
+              a(href="#") Media center
+        div(class="footer-nav__block")
+          h3(class="footer-nav__title") Our programs
+          ul(class="footer-nav__links")
+            li
+              a(href="#") Hike the hill
+            li
+              a(href="#") Volunteer vacations
+            li
+              a(href="#") Alternative break
+        div(class="footer-nav__block")
+          h3(class="footer-nav__title") Support trails
+          ul(class="footer-nav__links")
+            li
+              a(href="#") Donate
+            li
+              a(href="#") Individual membership
+            li
+              a(href="#") Gift membership
+            li
+              a(href="#") Hiker store
+        div(class="footer-nav__block")
+          h3(class="footer-nav__title") Hiking resources
+          ul(class="footer-nav__links")
+            li
+              a(href="#") Hikes near you
+            li
+              a(href="#") Hiking 101
+            li
+              a(href="#") Muncak blog
+            li
+              a(href="#") Hiking organizations
+      ul(class="social-links")
+        li(class="social-links__item")
+          a(href="#")
+        li(class="social-links__item")
+          a(href="#")
+        li(class="social-links__item")
+          a(href="#")
