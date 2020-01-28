@@ -1,7 +1,8 @@
 $corporate-color: #12B8FF;
 $dark-blue: rgb(40, 112, 219);
+
 $tablet-size: 1200px;
-$screen-margin: 220px;
+$screen-bottom-margin: 220px;
 
 @mixin bigContainer {
     margin: 0 5vw;

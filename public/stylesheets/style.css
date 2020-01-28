@@ -26,19 +26,19 @@ body {
   margin-bottom: 100px;
 }
 
-.main-header .logo {
+.logo {
   color: #1c2056;
   font-weight: bold;
   font-size: 40px;
 }
 
-.main-header .logo .logo__highlighted-letter {
+.logo__highlighted-letter {
   color: #2870db;
   -webkit-transition: color 1s;
   transition: color 1s;
 }
 
-.main-header .main-nav {
+.main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,13 +48,13 @@ body {
           box-sizing: border-box;
 }
 
-.main-header .main-nav__item a {
+.main-nav__item a {
   text-decoration: none;
   color: #ffffff;
   padding: 5px 2vw;
 }
 
-.main-header .main-nav__item a:hover {
+.main-nav__item a:hover {
   color: #14215e;
   background-color: #ffffff;
   border-radius: 13px;
@@ -62,15 +62,12 @@ body {
   transition: color 0.2s, background-color 0.2s;
 }
 
-.main-header .main-nav__item:first-child {
-  margin-left: 0;
-}
-
 /* Home section */
 .welcome {
   margin: 0 9vw;
+  width: 35vw;
   color: #1c2056;
-  margin-bottom: 26vw;
+  margin-bottom: 440px;
 }
 
 .welcome__title {
@@ -85,7 +82,7 @@ body {
   margin-bottom: 70px;
 }
 
-.welcome .start-btn {
+.start-btn {
   text-align: center;
   color: #ffffff;
   background-color: #2870db;
@@ -102,7 +99,7 @@ body {
   outline: none;
 }
 
-.welcome .start-btn:hover {
+.start-btn:hover {
   -webkit-box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
           box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
 }
@@ -113,7 +110,7 @@ body {
   margin-bottom: 220px;
 }
 
-.go-hiking__title {
+.screen-title {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
@@ -123,7 +120,7 @@ body {
   max-width: 800px;
 }
 
-.go-hiking .hiking-roles {
+.hiking-roles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +133,7 @@ body {
           align-items: center;
 }
 
-.go-hiking .hiking-roles .hiking-role {
+.hiking-role {
   position: relative;
   max-width: 450px;
   margin-right: auto;
@@ -146,16 +143,7 @@ body {
   border-radius: 30px;
 }
 
-.go-hiking .hiking-roles .hiking-role__title {
-  font-size: 24px;
-  margin-bottom: 50px;
-}
-
-.go-hiking .hiking-roles .hiking-role__subtitle {
-  line-height: 2.5em;
-}
-
-.go-hiking .hiking-roles .hiking-role::before {
+.hiking-role::before {
   content: "";
   display: block;
   margin-bottom: 30px;
@@ -166,24 +154,33 @@ body {
   background-image: url(../images/advocate-icon.png);
 }
 
-.go-hiking .hiking-roles .hiking-role:nth-child(2)::before {
+.hiking-role:nth-child(2)::before {
   background-image: url(../images/volunteer-icon.png);
   width: calc(119px / 3);
   height: calc(150px / 3);
 }
 
-.go-hiking .hiking-roles .hiking-role:nth-child(3)::before {
+.hiking-role:nth-child(3)::before {
   background-image: url(../images/explore-icon.png);
   width: calc(187px / 3);
   height: calc(108px / 3);
 }
 
-.go-hiking .hiking-roles .hiking-role:nth-child(2n) {
+.hiking-role:nth-child(2n) {
   margin-right: 0;
   margin-left: auto;
 }
 
-.go-hiking .hiking-roles .bottom-wrapper {
+.hiking-role__title {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.hiking-role__subtitle {
+  line-height: 2.5em;
+}
+
+.bottom-wrapper {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +193,21 @@ body {
           justify-content: space-between;
 }
 
-.go-hiking .hiking-roles .bottom-wrapper .learn-btn {
+@media (max-width: 1200px) {
+  .bottom-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hiking-role,
+  .hiking-role:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.learn-btn {
   text-align: center;
   color: #ffffff;
   background-color: #2870db;
@@ -213,23 +224,9 @@ body {
   outline: none;
 }
 
-.go-hiking .hiking-roles .bottom-wrapper .learn-btn:hover {
+.learn-btn:hover {
   -webkit-box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
           box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
-}
-
-@media (max-width: 1200px) {
-  .go-hiking .hiking-roles .bottom-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .go-hiking .hiking-roles .hiking-role,
-  .go-hiking .hiking-roles .hiking-role:nth-child(2n) {
-    margin-right: 0;
-    margin-left: 0;
-  }
 }
 
 /* About section */
@@ -248,7 +245,7 @@ body {
   max-width: 800px;
 }
 
-.about .achievements-list {
+.achievements-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,13 +255,13 @@ body {
   list-style: none;
 }
 
-.about .achievements-list__item {
+.achievements-item {
   width: 300px;
   font-size: 22px;
   text-align: center;
 }
 
-.about .achievements-list__item :nth-child(2) {
+.achievements-item p:nth-child(2) {
   font-size: 36px;
   line-height: 72px;
   font-weight: bold;
@@ -287,7 +284,7 @@ body {
   max-width: 800px;
 }
 
-.news .news-list {
+.news-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,7 +297,7 @@ body {
   list-style: none;
 }
 
-.news .news-list__item {
+.news-list__item {
   min-width: calc(80vw / 3)-80px;
   max-width: 700px;
   margin-right: 40px;
@@ -310,46 +307,12 @@ body {
           box-shadow: 0px 27px 43px 0px rgba(32, 94, 171, 0.1);
 }
 
-.news .news-list__item-description {
-  padding: 35px;
-}
-
-.news .news-list__item-description *:not(:last-child) {
-  padding-bottom: 40px;
-}
-
-.news .news-list__item-image {
-  border-radius: 20px 20px 0 0;
-  height: 220px;
-  background-repeat: no-repeat;
-}
-
-.news .news-list__item:nth-child(1) .news-list__item-image {
-  background-image: url(../images/news1.jpg);
-}
-
-.news .news-list__item:nth-child(2) .news-list__item-image {
-  background-image: url(../images/news2.jpg);
-}
-
-.news .news-list__item:nth-child(3) .news-list__item-image {
-  background-image: url(../images/news3.jpg);
-}
-
-.news .news-list__item-title {
-  font-size: 24px;
-}
-
-.news .news-list__item-link {
-  text-decoration: none;
-}
-
-.news .news-list__item:last-child {
-  position: relative;
+.news-list__item:last-child {
   margin-right: 0;
+  position: relative;
 }
 
-.news .news-list__item:last-child::after {
+.news-list__item:last-child::after {
   content: "";
   display: block;
   position: absolute;
@@ -361,16 +324,59 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .news .news-list {
+  .news-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .news .news-list__item {
+  .news-list__item {
     margin-right: 0;
     margin-bottom: 50px;
   }
+}
+
+.news-list__item-image {
+  border-radius: 20px 20px 0 0;
+  height: 220px;
+  background-repeat: no-repeat;
+}
+
+.news-list__item:nth-child(1) .news-list__item-image {
+  background-image: url(../images/news1.jpg);
+}
+
+.news-list__item:nth-child(2) .news-list__item-image {
+  background-image: url(../images/news2.jpg);
+}
+
+.news-list__item:nth-child(3) .news-list__item-image {
+  background-image: url(../images/news3.jpg);
+}
+
+.news-list__item-text {
+  padding: 35px;
+}
+
+.news-list__item-text:not(:last-child) {
+  padding-bottom: 40px;
+}
+
+.news-list__item-text-title {
+  font-size: 24px;
+}
+
+.news-list__item-text-link {
+  text-decoration: none;
+}
+
+.news-list__item-text-link:hover {
+  color: #f8c7ca;
+}
+
+.news-list__item-text-title,
+.news-list__item-text-subtitle {
+  margin-bottom: 20px;
 }
 
 /* Login Section */
@@ -408,6 +414,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.login__form::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -50px;
+  bottom: 50px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/bg3-login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .login__form-field {
@@ -466,25 +485,12 @@ body {
           box-shadow: 0px 22px 23.52px 0.48px rgba(17, 83, 165, 0.21);
 }
 
-.login::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: -50px;
-  bottom: 50px;
-  width: 100px;
-  height: 100px;
-  background-image: url("../images/bg3-login.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* Main footer */
 .main-footer {
   margin: 0 9vw;
 }
 
-.main-footer .footer-nav {
+.footer-nav {
   margin-bottom: 73.33333px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,36 +503,36 @@ body {
   color: #FFFFFF;
 }
 
-.main-footer .footer-nav__title {
+.footer-nav__title {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 30px;
 }
 
-.main-footer .footer-nav__links {
+.footer-nav__links {
   list-style: none;
 }
 
-.main-footer .footer-nav__links a {
+.footer-nav__links a {
   text-decoration: none;
   color: #FFFFFF;
   line-height: 2em;
 }
 
-.main-footer .footer-nav__links a:hover {
+.footer-nav__links a:hover {
   color: #f8c7ca;
 }
 
-.main-footer .footer-nav .company-info p {
+.company-info p {
   line-height: 1.5em;
 }
 
-.main-footer .footer-nav .company-info p:first-of-type {
+.company-info p:first-of-type {
   margin-bottom: 25px;
 }
 
-.main-footer .social-links {
+.social-links {
   list-style: none;
   margin-bottom: 73.33333px;
   display: -webkit-box;
@@ -534,7 +540,7 @@ body {
   display: flex;
 }
 
-.main-footer .social-links__item a {
+.social-links__item a {
   display: block;
   margin-right: 10px;
   width: 45px;
@@ -545,23 +551,25 @@ body {
   background-position: center;
 }
 
-.main-footer .social-links__item a:hover {
+.social-links__item a:hover {
   background-color: #f8c7ca;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
-.main-footer .social-links__item:nth-child(1) a {
+.social-links__item:nth-child(1) a {
   background-image: url("../images/instagram-icon.png");
 }
 
-.main-footer .social-links__item:nth-child(2) a {
+.social-links__item:nth-child(2) a {
   background-image: url("../images/facebook-icon.png");
 }
 
-.main-footer .social-links__item:nth-child(3) a {
+.social-links__item:nth-child(3) a {
   background-image: url("../images/twitter-icon.png");
 }
 
-.main-footer .social-links__item:last-child a {
+.social-links__item:last-child a {
   margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */
